@@ -81,7 +81,7 @@ const levelData = [
     },
     blackboard: {
       answer: [
-        'justify-content: flex-start;',
+        'justify-content: center;',
         // 'align-items: center;',
       ],
       goal: {
@@ -210,7 +210,9 @@ gameSector.style.minHeight = `calc(${getComputedStyle(blackboard).width} + 2em)`
 
 prepareLevel(1, 'ukr')
 
-sidebar.addEventListener('change', () => {
+
+
+information.addEventListener('change', () => {
   const level = document.querySelector('input:checked').value
   const lang = document.querySelector('option:checked').value
   cleanCode()

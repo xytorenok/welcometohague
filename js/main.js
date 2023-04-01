@@ -1,4 +1,5 @@
 const code = document.getElementById('code')
+const information= document.getElementById('information')
 const sidebar = document.getElementById('sidebar')
 const languageBtn = document.getElementById('language')
 const levelBlock = document.getElementById('pagination')
@@ -77,12 +78,10 @@ function checkSolution() {
     audioWelcomeToHaager.volume = 0.4
     audioWelcomeToHaager.play();
     putin.style.opacity = 0.8
+    submit.disabled = false;
   }
 }
 
-function missionComplete() {
-
-}
 
 
 code.addEventListener('keydown', function (event) {
@@ -105,30 +104,36 @@ function shake() {
 }
 
 
-const radios = document.querySelectorAll('input[type="radio"]');
-
-
-submit.addEventListener('click', function() {
+//нажатие на кнопку добавляет значение n+1 в атрибут value, затем мы считываем атрибут и передаем его в функцию prepareLevel()
+submit.addEventListener('click', function (event) {
+  event.preventDefault()
+  const radios = document.querySelectorAll('input[type="radio"]');
   let checkedIndex = -1;
+  
   for (let i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
       checkedIndex = i;
       break;
     }
   }
-  if (checkedIndex > -1 && checkedIndex < radios.length - 1 && editor.matches('.solved')) {
+  if (checkedIndex > -1 && checkedIndex < radios.length - 1) {
     radios[checkedIndex + 1].checked = true;
   }
-  console.log(document.querySelector('input:checked').value);
-  console.log(document.querySelector('option:checked').value);
 
+  const level = document.querySelector('input:checked').value
+  const lang = document.querySelector('option:checked').value
+
+  prepareLevel(level, lang)
   cleanCode()
- 
-  prepareLevel(document.querySelector('input:checked').value,document.querySelector('option:checked').value)
-  
+  console.log('click');
 });
 
-function cleanCode(){
+function nextLvl() {
+
+}
+
+function cleanCode() {
   code.value = ''
   editor.classList.remove('solved')
+  submit.disabled = true;
 }

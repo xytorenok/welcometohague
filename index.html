@@ -24,40 +24,41 @@
 
 <body>
   <section id="sidebar">
-    <select name="lang" id="language1">
-      <option value="ukr" selected class="option"> Українська мова </option>
-      <option value="eng" class="option">English language</option>
-    </select>
-    <div id="information">
-      <h1>Haager Prozess</h1>
-      <div id="pagination">
-        <input type="radio" name="lvl" id="lvl1" value="1" checked>
-        <label for="lvl1">1</label>
-        <input type="radio" name="lvl" id="lvl2" value="2">
-        <label for="lvl2">2</label>
-        <input type="radio" name="lvl" id="lvl3" value="3">
-        <label for="lvl3">3</label>
-        <!-- <input type="radio" name="lvl" id="lvl4" value="4">
+      <div id="information">
+        <select name="lang" id="language1">
+          <option value="ukr" selected class="option"> Українська мова </option>
+          <option value="eng" class="option">English language</option>
+        </select>
+        <h1>Haager Prozess</h1>
+        <div id="pagination">
+          <input type="radio" name="lvl" id="lvl1" value="1" checked>
+          <label for="lvl1">1</label>
+          <input type="radio" name="lvl" id="lvl2" value="2">
+          <label for="lvl2">2</label>
+          <input type="radio" name="lvl" id="lvl3" value="3">
+          <label for="lvl3">3</label>
+          <!-- <input type="radio" name="lvl" id="lvl4" value="4">
         <label for="lvl4">4</label>
         <input type="radio" name="lvl" id="lvl5" value="5">
         <label for="lvl5">5</label> -->
+        </div>
+        <details id="mission-info">
+          <summary>What i have to do?</summary>
+          <p></p>
+        </details>
+
+        <details id="task-info">
+          <summary>How can I do it?</summary>
+          <p></p>
+        </details>
+
+        <details id="example-info">
+          <summary>Example</summary>
+          <p></p>
+        </details>
+
       </div>
-      <details id="mission-info">
-        <summary>What i have to do?</summary>
-        <p></p>
-      </details>
-
-      <details id="task-info">
-        <summary>How can I do it?</summary>
-        <p></p>
-      </details>
-
-      <details id="example-info">
-        <summary>Example</summary>
-        <p></p>
-      </details>
-
-    </div>
+   
     <div id="editor">
       <div id="css">
         <div id="line-number">
@@ -83,7 +84,7 @@
 
       </div>
 
-      <button id="submit">go</button>
+      <button id="submit" disabled>go</button>
     </div>
 
     <audio id="audio-welcome-to-haager" src="audio/WelcomeToHaager.m4a"></audio>
