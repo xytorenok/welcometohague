@@ -20,13 +20,10 @@
 
 @media(max-width:500px) {
 
-  #language {
-    position: relative;
-    right: auto;
-    top: auto;
-    text-align: right;
+  #information h1 span{
     display: block;
-  }
+    margin-left: 60px;
+}
 
   /* #road-map-to-the-hague {
     min-height: 500px;

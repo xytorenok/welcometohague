@@ -28,9 +28,11 @@ body {
 
 #information h1 {
     font-size: 32px;
+    line-height: 1.1;
 }
 
-#language1 {
+
+#language {
     position: absolute;
     right: 1em;
     top: 2em;
