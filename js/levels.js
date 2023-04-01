@@ -25,8 +25,8 @@ const levelData = [
     ukr: {
       mission: '<p class="history-text">Настав час допомогти російському уряду знайти Гаазькі суди. Використовуючи магію веб програмування, відправте Путіна та його уряд до Гаазького суду.</p><audio src="audio/mission-info-1ukr.m4a"></audio>',
       task: '<p class="task-text">Використовуй властивість <span>justify-content</span> для вирівнювання елемента уздовж головної осі та одне з його значень<ul class="task-rules-list"><li><span>flex-start</span>: елементи вирівнюються до початку головної осі.</li><li><span>flex-end</span>: елементи вирівнюються до кінця головної осі.</li><li><span>center</span>: елементи вирівнюються по центру головної осі.</li></ul>',
-      example: '<p class="example-text"><span>justify-content: center;</span> відправить Путіна на середину шляху до Гаакського суду</p>',
-      comment: '<p>&#60;&#33;&#45;&#45; Скопіюй властивість <span>justify-content:</span>в область введення, та вкажи значення яке <br>вирівняє об\'єкт по центру &#45;&#45;&#62;</p>'
+      example: '<p class="example-text"><span>justify-content: center;</span> відправить Путіна тільки на середину шляху до Гаакського суду</p>',
+      comment: '<p>&#60;&#33;&#45;&#45; Скопіюй властивість <span>justify-content:flex-end</span>в область введення &#45;&#45;&#62;</p>'
     },
     eng: {
       mission: 'міссія info html',
@@ -62,7 +62,7 @@ const levelData = [
       mission: '<p class="history-text">Давайте ще раз відправимо путіна до суду, щоб у нього сформувалася звичка це робити</p><audio src="audio/mission-info-2ukr.m4a"></audio>',
       task: '<p class="task-text">Використовуй властивість <span>justify-content</span> для вирівнювання елемента уздовж головної осі та одне з його значень<ul class="task-rules-list"><li><span>flex-start</span>: елементи вирівнюються до початку головної осі.</li><li><span>flex-end</span>: елементи вирівнюються до кінця головної осі.</li><li><span>center</span>: елементи вирівнюються по центру головної осі.</li></ul>',
       example: '<p class="example-text"> <span>justify-content: flex-start;</span> залишить путіна на місці в лівій частині поля. Знаходиться він вже там тому, що значення flex-start є дефолтним для властивості елемента</p>',
-      comment: '<p>&#60;&#33;&#45;&#45; Скопіюй властивість <span>justify-content:</span>в область введення, та вкажи значення яке <br>вирівняє об\'єкт по центру &#45;&#45;&#62;</p>'
+      comment: '<p>&#60;&#33;&#45;&#45; Скопіюй властивість <span>justify-content:center</span>в область введення &#45;&#45;&#62;</p>'
     },
     eng: {
       mission: 'міссія info html',
@@ -97,8 +97,8 @@ const levelData = [
       mission: '<p class="history-text">Сьогодні настає 3 день формування звички у Путіна та його уряду йти до гаазького суду. Ще 18 днів потрібно для створення міцних нейронних зв\'язків</p><audio src="audio/mission-info-3ukr.m4a"></audio>',
       task: '<p class="task-text">Використовуй властивість <span>justify-content</span> для вирівнювання елемента уздовж головної осі та одне з його значень<ul class="task-rules-list"><li><span>flex-start</span>: елементи вирівнюються до початку головної осі.</li><li><span>flex-end</span>: елементи вирівнюються до кінця головної осі.</li><li><span>center</span>: елементи вирівнюються по центру головної осі.</li></ul>',
       example: '<p class="example-text"><span>justify-content: go-to-haager;</span> відправить путіна до Гаазького суду моментально, але його не існує. Маю на увазі значення, падло живий, суд теж на місті</p>',
-
-      comment: '<p>&#60;&#33;&#45;&#45; Властивість align-items:<br> визначає вирівнювання елементів вертикальної осі <br>всередині контейнера, а значення center; вирівнює об\'єкт по центру &#45;&#45;&#62;</p>',
+      comment: '<p>&#60;&#33;&#45;&#45; Скопіюй властивість <span>justify-content:center</span>в область введення &#45;&#45;&#62;</p>',
+  
     },
     eng: {
       mission: 'міссія info html',
