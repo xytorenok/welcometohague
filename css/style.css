@@ -1,0 +1,229 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Monaco, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    /* color: azure; */
+}
+
+#sidebar {
+    position: relative;
+    background-color: #fccd02;
+    min-width: 45%;
+    padding: 1em;
+}
+
+#road-map-to-the-hague {
+    position: relative;
+    background-color: #007d59;
+    min-width: 55%;
+    min-height: 650px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#information h1 {
+    font-size: 32px;
+}
+
+#language1 {
+    position: absolute;
+    right: 1em;
+    top: 2em;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+.task-text {
+    margin-bottom: 10px;
+}
+
+.task-text span,
+.task-rules-list li span,
+.example-text span {
+    color: #fff;
+    background-color: #007d59;
+}
+
+.task-rules-list {
+    font-size: 14px;
+}
+
+#editor {
+    position: relative;
+    width: 100%;
+}
+
+#css {
+    position: relative;
+    height: 310px;
+    width: 100%;
+    padding: 10px 20px 10px 50px;
+    background-color: #1e1e1e;
+}
+
+#line-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    text-align: right;
+}
+
+#line-number p {
+    color: #858585;
+}
+
+.selector-text {
+    color: #d3b988;
+}
+
+.parenthesis {
+    color: #e3da3d;
+}
+
+.rules-text {
+    display: block;
+    margin-left: 2em;
+    color: #b6ddfa;
+}
+
+#code {
+    width: 100%;
+    height: 48px;
+    padding: 4px;
+    padding-left: 2em;
+    background-color: #282828;
+    color: #b6ddfa;
+    overflow: hidden;
+    resize: none;
+    cursor: text;
+}
+
+#comment {
+    font-size: 15px;
+    color: #7b975a;
+}
+
+#comment span {
+    display: block;
+    margin: 0 50px;
+}
+
+#submit {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    background-color: #497cc9;
+    color: #fff
+}
+
+#editor:not(.solved)>#submit {
+    opacity: 0.5;
+}
+
+#blackboard {
+    position: absolute;
+    max-width: 550px;
+    width: 90%;
+    aspect-ratio: 1/1;
+    /* max-height: 550px;
+    height: 90%; */
+    background-color: #3B806C;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    /* justify-content: end; */
+}
+
+.court {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+}
+
+.faces {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+}
+
+.putin {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate(-1px, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate(2px, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate(-4px, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate(4px, 0);
+    }
+}
+
+
+#pagination {
+    display: flex;
+    align-items: center;
+}
+
+#pagination input {
+    display: none;
+}
+
+#pagination label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+    margin: 0 2px;
+    color: #b6ddfa;
+    background-color: #282828;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#pagination :checked+label {
+    background-color: #3B806C;
+    color: #d3b988;
+
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2lvl</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+  <link rel="manifest" href="img/favicon//site.webmanifest">
+  <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#9f00a7">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="js/main.js" defer></script>
+  <script src="js/levels.js" defer></script>
+</head>
+
+<body>
+  <section id="sidebar">
+    <select name="lang" id="language1">
+      <option value="ukr" selected class="option"> Українська мова </option>
+      <option value="eng" class="option">English language</option>
+    </select>
+    <div id="information">
+      <h1>Haager Prozess</h1>
+      <div id="pagination">
+        <input type="radio" name="lvl" id="lvl1" value="1" checked>
+        <label for="lvl1">1</label>
+        <input type="radio" name="lvl" id="lvl2" value="2">
+        <label for="lvl2">2</label>
+        <input type="radio" name="lvl" id="lvl3" value="3">
+        <label for="lvl3">3</label>
+        <!-- <input type="radio" name="lvl" id="lvl4" value="4">
+        <label for="lvl4">4</label>
+        <input type="radio" name="lvl" id="lvl5" value="5">
+        <label for="lvl5">5</label> -->
+      </div>
+      <details id="mission-info">
+        <summary>What i have to do?</summary>
+        <p></p>
+      </details>
+
+      <details id="task-info">
+        <summary>How can I do it?</summary>
+        <p></p>
+      </details>
+
+      <details id="example-info">
+        <summary>Example</summary>
+        <p></p>
+      </details>
+
+    </div>
+    <div id="editor">
+      <div id="css">
+        <div id="line-number">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>6</p>
+          <p>7</p>
+          <p>8</p>
+          <p>9</p>
+          <p>10</p>
+          <p>11</p>
+          <p>12</p>
+        </div>
+        <p id="selector-start">
+        </p>
+        <textarea id="code"></textarea>
+        <p id="selector-end"><span class="parenthesis">&#125;</span></p>
+        <div id="comment">
+        </div>
+
+      </div>
+
+      <button id="submit">go</button>
+    </div>
+
+    <audio id="audio-welcome-to-haager" src="audio/WelcomeToHaager.m4a"></audio>
+  </section>
+
+  <section id="road-map-to-the-hague">
+    <div id="blackboard">
+      <div class="faces">
+        <div class="putin"><img src="img/putin.png" alt=""></div>
+      </div>
+      <div class="court"><img src="img/court.jpg" style="border-radius: 20px" alt=""></div>
+    </div>
+
+  </section>
+
+
+</body>
+
+</html>

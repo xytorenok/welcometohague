@@ -1,0 +1,61 @@
+@media(max-width:1100px) {
+  #board {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+}
+
+@media(max-width:990px) {
+  body {
+    flex-direction: column;
+  }
+
+  #board {
+    max-width: 450px;
+    max-height: 450px;
+  }
+
+}
+
+@media(max-width:500px) {
+
+  #language {
+    position: relative;
+    right: auto;
+    top: auto;
+    text-align: right;
+    display: block;
+  }
+
+  /* #road-map-to-the-hague {
+    min-height: 500px;
+  } */
+
+  #board {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+}
+
+@media(max-width:400px) {
+  body {
+    font-size: 15px;
+  }
+
+  #comment {
+    font-size: 13px;
+
+  }
+
+  /* #road-map-to-the-hague {
+    min-height: 350px;
+  } */
+
+  #board {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+}
